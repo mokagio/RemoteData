@@ -15,4 +15,13 @@ extension RemoteData {
     case .notAsked: return .notAsked
     }
   }
+
+  public func mapError<F: Error>(_ transform: (E) -> F) -> RemoteData<T, F> {
+    switch self {
+    case .success(let value): return .success(value)
+    case .failure(let error): return .failure(transform(error))
+    case .loading: return .loading
+    case .notAsked: return .notAsked
+    }
+  }
 }
