@@ -10,6 +10,7 @@
 		3F6699A11F9F1E50008BA7FA /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6699971F9F1E4F008BA7FA /* RemoteData.framework */; };
 		3F6699A81F9F1E50008BA7FA /* RemoteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F66999A1F9F1E4F008BA7FA /* RemoteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6699B21F9F1E61008BA7FA /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6699B11F9F1E61008BA7FA /* RemoteData.swift */; };
+		3FB9F73B1FA9DAD1004D9FBE /* RemoteDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB9F73A1FA9DAD1004D9FBE /* RemoteDataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3F6699A01F9F1E50008BA7FA /* RemoteDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6699A71F9F1E50008BA7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6699B11F9F1E61008BA7FA /* RemoteData.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = RemoteData.swift; sourceTree = "<group>"; tabWidth = 2; };
+		3FB9F73A1FA9DAD1004D9FBE /* RemoteDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6699A71F9F1E50008BA7FA /* Info.plist */,
+				3FB9F73A1FA9DAD1004D9FBE /* RemoteDataTests.swift */,
 			);
 			path = RemoteDataTests;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 					};
 					3F66999F1F9F1E50008BA7FA = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -207,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB9F73B1FA9DAD1004D9FBE /* RemoteDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,11 +386,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RemoteDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = opensource.mokagio.RemoteDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -395,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RemoteDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
