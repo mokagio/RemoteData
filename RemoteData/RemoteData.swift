@@ -7,6 +7,10 @@ public enum RemoteData<T, E: Error> {
 
 extension RemoteData {
 
+  public init(value: T) {
+    self = .success(value)
+  }
+
   public func map<U>(_ transform: (T) -> U) -> RemoteData<U, E> {
     switch self {
     case .success(let value): return .success(transform(value))
