@@ -11,6 +11,8 @@
 		3F567E01267F4F21000A5361 /* MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E00267F4F21000A5361 /* MapTests.swift */; };
 		3F567E03267F4F9D000A5361 /* MapErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E02267F4F9D000A5361 /* MapErrorTests.swift */; };
 		3F567E05267F4FD4000A5361 /* MapBoth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E04267F4FD4000A5361 /* MapBoth.swift */; };
+		3F567E07267F5145000A5361 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E06267F5145000A5361 /* ResultTests.swift */; };
+		3F5F70A5268307120096B7E5 /* RemoteData+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */; };
 		3F6699A11F9F1E50008BA7FA /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6699971F9F1E4F008BA7FA /* RemoteData.framework */; };
 		3F6699A81F9F1E50008BA7FA /* RemoteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F66999A1F9F1E4F008BA7FA /* RemoteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6699B21F9F1E61008BA7FA /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6699B11F9F1E61008BA7FA /* RemoteData.swift */; };
@@ -32,6 +34,8 @@
 		3F567E00267F4F21000A5361 /* MapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTests.swift; sourceTree = "<group>"; };
 		3F567E02267F4F9D000A5361 /* MapErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapErrorTests.swift; sourceTree = "<group>"; };
 		3F567E04267F4FD4000A5361 /* MapBoth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoth.swift; sourceTree = "<group>"; };
+		3F567E06267F5145000A5361 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteData+Result.swift"; sourceTree = "<group>"; };
 		3F6699971F9F1E4F008BA7FA /* RemoteData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F66999A1F9F1E4F008BA7FA /* RemoteData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteData.h; sourceTree = "<group>"; };
 		3F66999B1F9F1E4F008BA7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,9 +87,10 @@
 		3F6699991F9F1E4F008BA7FA /* RemoteData */ = {
 			isa = PBXGroup;
 			children = (
-				3F66999A1F9F1E4F008BA7FA /* RemoteData.h */,
 				3F66999B1F9F1E4F008BA7FA /* Info.plist */,
+				3F66999A1F9F1E4F008BA7FA /* RemoteData.h */,
 				3F6699B11F9F1E61008BA7FA /* RemoteData.swift */,
+				3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */,
 			);
 			path = RemoteData;
 			sourceTree = "<group>";
@@ -94,10 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				3F6699A71F9F1E50008BA7FA /* Info.plist */,
+				3FB9F73A1FA9DAD1004D9FBE /* InitTests.swift */,
 				3F567E04267F4FD4000A5361 /* MapBoth.swift */,
 				3F567E02267F4F9D000A5361 /* MapErrorTests.swift */,
 				3F567E00267F4F21000A5361 /* MapTests.swift */,
-				3FB9F73A1FA9DAD1004D9FBE /* InitTests.swift */,
+				3F567E06267F5145000A5361 /* ResultTests.swift */,
 				3F567DFE267F4EDB000A5361 /* TestError.swift */,
 			);
 			path = RemoteDataTests;
@@ -216,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5F70A5268307120096B7E5 /* RemoteData+Result.swift in Sources */,
 				3F6699B21F9F1E61008BA7FA /* RemoteData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F567E07267F5145000A5361 /* ResultTests.swift in Sources */,
 				3F567DFF267F4EDB000A5361 /* TestError.swift in Sources */,
 				3F567E03267F4F9D000A5361 /* MapErrorTests.swift in Sources */,
 				3F567E05267F4FD4000A5361 /* MapBoth.swift in Sources */,
