@@ -13,6 +13,10 @@
 		3F567E05267F4FD4000A5361 /* MapBoth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E04267F4FD4000A5361 /* MapBoth.swift */; };
 		3F567E07267F5145000A5361 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F567E06267F5145000A5361 /* ResultTests.swift */; };
 		3F5F70A5268307120096B7E5 /* RemoteData+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */; };
+		3F5F70AD2683095D0096B7E5 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F70AC2683095D0096B7E5 /* ExampleApp.swift */; };
+		3F5F70AF2683095D0096B7E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F70AE2683095D0096B7E5 /* ContentView.swift */; };
+		3F5F70B12683095F0096B7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F70B02683095F0096B7E5 /* Assets.xcassets */; };
+		3F5F70B42683095F0096B7E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F70B32683095F0096B7E5 /* Preview Assets.xcassets */; };
 		3F6699A11F9F1E50008BA7FA /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6699971F9F1E4F008BA7FA /* RemoteData.framework */; };
 		3F6699A81F9F1E50008BA7FA /* RemoteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F66999A1F9F1E4F008BA7FA /* RemoteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6699B21F9F1E61008BA7FA /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6699B11F9F1E61008BA7FA /* RemoteData.swift */; };
@@ -36,6 +40,12 @@
 		3F567E04267F4FD4000A5361 /* MapBoth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoth.swift; sourceTree = "<group>"; };
 		3F567E06267F5145000A5361 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RemoteData+Result.swift"; sourceTree = "<group>"; };
+		3F5F70AA2683095D0096B7E5 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5F70AC2683095D0096B7E5 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
+		3F5F70AE2683095D0096B7E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F5F70B02683095F0096B7E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F5F70B32683095F0096B7E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3F5F70B52683095F0096B7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6699971F9F1E4F008BA7FA /* RemoteData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RemoteData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F66999A1F9F1E4F008BA7FA /* RemoteData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteData.h; sourceTree = "<group>"; };
 		3F66999B1F9F1E4F008BA7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F5F70A72683095D0096B7E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F6699931F9F1E4F008BA7FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +81,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5F70AB2683095D0096B7E5 /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F70AC2683095D0096B7E5 /* ExampleApp.swift */,
+				3F5F70AE2683095D0096B7E5 /* ContentView.swift */,
+				3F5F70B02683095F0096B7E5 /* Assets.xcassets */,
+				3F5F70B52683095F0096B7E5 /* Info.plist */,
+				3F5F70B22683095F0096B7E5 /* Preview Content */,
+			);
+			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		3F5F70B22683095F0096B7E5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3F5F70B32683095F0096B7E5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		3F66998D1F9F1E4F008BA7FA = {
 			isa = PBXGroup;
 			children = (
 				3F6699991F9F1E4F008BA7FA /* RemoteData */,
 				3F6699A41F9F1E50008BA7FA /* RemoteDataTests */,
+				3F5F70AB2683095D0096B7E5 /* ExampleApp */,
 				3F6699981F9F1E4F008BA7FA /* Products */,
 			);
 			indentWidth = 2;
@@ -80,6 +118,7 @@
 			children = (
 				3F6699971F9F1E4F008BA7FA /* RemoteData.framework */,
 				3F6699A01F9F1E50008BA7FA /* RemoteDataTests.xctest */,
+				3F5F70AA2683095D0096B7E5 /* ExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +162,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3F5F70A92683095D0096B7E5 /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5F70B62683095F0096B7E5 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				3F5F70A62683095D0096B7E5 /* Sources */,
+				3F5F70A72683095D0096B7E5 /* Frameworks */,
+				3F5F70A82683095D0096B7E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = 3F5F70AA2683095D0096B7E5 /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3F6699961F9F1E4F008BA7FA /* RemoteData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6699AB1F9F1E50008BA7FA /* Build configuration list for PBXNativeTarget "RemoteData" */;
@@ -165,10 +221,14 @@
 		3F66998E1F9F1E4F008BA7FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = mokagio;
 				TargetAttributes = {
+					3F5F70A92683095D0096B7E5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+					};
 					3F6699961F9F1E4F008BA7FA = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1020;
@@ -196,11 +256,21 @@
 			targets = (
 				3F6699961F9F1E4F008BA7FA /* RemoteData */,
 				3F66999F1F9F1E50008BA7FA /* RemoteDataTests */,
+				3F5F70A92683095D0096B7E5 /* ExampleApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F5F70A82683095D0096B7E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F70B42683095F0096B7E5 /* Preview Assets.xcassets in Resources */,
+				3F5F70B12683095F0096B7E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F6699951F9F1E4F008BA7FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +288,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3F5F70A62683095D0096B7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5F70AF2683095D0096B7E5 /* ContentView.swift in Sources */,
+				3F5F70AD2683095D0096B7E5 /* ExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F6699921F9F1E4F008BA7FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +330,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3F5F70B72683095F0096B7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExampleApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = examples.giolodi.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F5F70B82683095F0096B7E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExampleApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = examples.giolodi.ExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3F6699A91F9F1E50008BA7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +567,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F5F70B62683095F0096B7E5 /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5F70B72683095F0096B7E5 /* Debug */,
+				3F5F70B82683095F0096B7E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F6699911F9F1E4F008BA7FA /* Build configuration list for PBXProject "RemoteData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
