@@ -7,3 +7,8 @@ extension RemoteData {
     }
   }
 }
+
+extension Result {
+
+  public var remoteData: RemoteData<Success, Failure> { RemoteData<Success, Failure>(self) }
+}
