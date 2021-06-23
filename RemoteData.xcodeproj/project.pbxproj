@@ -17,6 +17,7 @@
 		3F5F70AF2683095D0096B7E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F70AE2683095D0096B7E5 /* ContentView.swift */; };
 		3F5F70B12683095F0096B7E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F70B02683095F0096B7E5 /* Assets.xcassets */; };
 		3F5F70B42683095F0096B7E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F70B32683095F0096B7E5 /* Preview Assets.xcassets */; };
+		3F5F70BA268309C10096B7E5 /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6699971F9F1E4F008BA7FA /* RemoteData.framework */; };
 		3F6699A11F9F1E50008BA7FA /* RemoteData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6699971F9F1E4F008BA7FA /* RemoteData.framework */; };
 		3F6699A81F9F1E50008BA7FA /* RemoteData.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F66999A1F9F1E4F008BA7FA /* RemoteData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6699B21F9F1E61008BA7FA /* RemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6699B11F9F1E61008BA7FA /* RemoteData.swift */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5F70BA268309C10096B7E5 /* RemoteData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +103,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3F5F70B9268309C10096B7E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F66998D1F9F1E4F008BA7FA = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +117,7 @@
 				3F6699A41F9F1E50008BA7FA /* RemoteDataTests */,
 				3F5F70AB2683095D0096B7E5 /* ExampleApp */,
 				3F6699981F9F1E4F008BA7FA /* Products */,
+				3F5F70B9268309C10096B7E5 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
