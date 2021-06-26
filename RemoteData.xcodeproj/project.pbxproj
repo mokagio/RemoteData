@@ -92,7 +92,8 @@
 				3F6699B11F9F1E61008BA7FA /* RemoteData.swift */,
 				3F5F70A4268307120096B7E5 /* RemoteData+Result.swift */,
 			);
-			path = RemoteData;
+			name = RemoteData;
+			path = Sources/RemoteData;
 			sourceTree = "<group>";
 		};
 		3F6699A41F9F1E50008BA7FA /* RemoteDataTests */ = {
@@ -106,7 +107,8 @@
 				3F567E06267F5145000A5361 /* ResultTests.swift */,
 				3F567DFE267F4EDB000A5361 /* TestError.swift */,
 			);
-			path = RemoteDataTests;
+			name = RemoteDataTests;
+			path = Tests/RemoteDataTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,7 +382,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RemoteData/Info.plist;
+				INFOPLIST_FILE = Sources/RemoteData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = opensource.mokagio.RemoteData;
@@ -402,7 +404,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RemoteData/Info.plist;
+				INFOPLIST_FILE = Sources/RemoteData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = opensource.mokagio.RemoteData;
@@ -419,7 +421,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RemoteDataTests/Info.plist;
+				INFOPLIST_FILE = Tests/RemoteDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = opensource.mokagio.RemoteDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +437,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RemoteDataTests/Info.plist;
+				INFOPLIST_FILE = Tests/RemoteDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = opensource.mokagio.RemoteDataTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
