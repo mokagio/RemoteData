@@ -37,4 +37,34 @@ extension RemoteData {
     case .notAsked: return .notAsked
     }
   }
+
+  /// Returns the success value as a throwing expression.
+  ///
+  /// Use this method to retrieve the value of this remote data if it represents a
+  /// success, or to catch the value otherwise.
+  ///
+  ///     let integerRemoteData: RemoteData<Int, Error> = .success(5)
+  ///     do {
+  ///       let value = try integerRemoteData.get()
+  ///       print("The value is \(value).")
+  ///     } catch {
+  ///       print("Error retrieving the value: \(error)")
+  ///     }
+  ///     // Prints "The value is 5."
+  ///
+  /// - Returns: The success value, if the instance represents a success.
+  /// - Throws: The failure value, if the instance does not represents a success.
+  @inlinable public func get() throws -> T {
+    switch self {
+    case .success(let value): return value
+    case .failure(let error): throw error
+    case _: throw GetError()
+    }
+  }
+
+  @usableFromInline
+  struct GetError: Error {
+
+    @usableFromInline init() {}
+  }
 }
